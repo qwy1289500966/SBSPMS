@@ -42,6 +42,12 @@
     </asp:DropDownList>
     <br />
     <asp:Button ID="Button2" Text="确定" runat="server" onclick="Button2_Click"/>
+    <br />
+    用户类型：<asp:TextBox ID="TextBox3" runat="server" /> 
+    <br />
+    密码：<asp:TextBox ID="TextBox4" runat="server" TextMode="Password"/> 
+    <br />
+    <asp:Button ID="Button3" Text="登录" runat="server" onclick="Button3_Click" />
     </form>    
 </body>
 </html>

@@ -14,12 +14,12 @@ namespace SBSPMS
         {
             Label1.Text = "Rua!";
             //int i = int.Parse("test");
-            if (Request.Cookies["ID"] != null && Request.Cookies["PWD"] != null)
+            /*if (Request.Cookies["ID"] != null && Request.Cookies["PWD"] != null)
             {
                 string id = Request.Cookies["ID"].Value.ToString();
                 string pwd = Request.Cookies["PWD"].Value.ToString();
                 Response.Redirect("New.aspx?ID="+id+"&&PWD="+pwd+"");
-            }
+            }*/
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -61,6 +61,36 @@ namespace SBSPMS
             sb.Append(Server.GetLastError().ToString());
             Response.Write(sb.ToString());
             Server.ClearError();
+        }
+
+        private static readonly string[] users = new string[]{"admin","user"};
+        private int usertype(string userid) {
+            if (userid == users[0])
+            {
+                return 1;
+            }
+            if (userid == users[1])
+            {
+                return 2;
+            }
+            else
+                return 0;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            string userid = TextBox3.Text.ToString();
+            string pwd = TextBox4.Text.ToString();
+            Session["UserType"] = usertype(userid);
+            switch (Session["UserType"].ToString())
+            {
+                case "1": Response.Redirect("Admin.aspx?userid=" + userid + "");
+                    break;
+                case "2": Response.Redirect("User.aspx?userid="+userid+"");
+                    break;
+                default: Response.Write("<script>alert('对不起，你不是合法用户！')</script>");
+                    break;
+            }
         }
     }
 }
