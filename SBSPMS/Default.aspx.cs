@@ -81,7 +81,7 @@ namespace SBSPMS
         {
             string userid = TextBox3.Text.ToString();
             string pwd = TextBox4.Text.ToString();
-            Session["UserType"] = usertype(userid);
+            /*Session["UserType"] = usertype(userid);
             switch (Session["UserType"].ToString())
             {
                 case "1": Response.Redirect("Admin.aspx?userid=" + userid + "");
@@ -90,7 +90,22 @@ namespace SBSPMS
                     break;
                 default: Response.Write("<script>alert('对不起，你不是合法用户！')</script>");
                     break;
+            }*/
+            if (usertype(userid)==1 || usertype(userid)==2)
+            {
+                Application.Lock();
             }
+            switch (usertype(userid).ToString())
+            {
+                case "1": Application["admin"] = Convert.ToInt32(Application["admin"]) + 1;
+                    break;
+                case "2": Application["user"] = Convert.ToInt32(Application["user"]) + 1;
+                    break;
+                default: Response.Write("<script>alert('对不起，你不是合法用户！')</script>");
+                    break;
+            }
+            Application.UnLock();
+            Response.Redirect("Total.aspx?userid=" + userid);
         }
     }
 }
