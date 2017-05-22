@@ -5,11 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace SBSPMS
 {
     public partial class Default : System.Web.UI.Page
     {
+        SqlConnection sqlcon;
+        string strCon = "Data Source=192.168.50.4;Initial Catalog=SBSPMS;Persist Security Info=True;User ID=sa;Password=123456";
+        private int sum = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Text = "Rua!";
@@ -20,6 +25,26 @@ namespace SBSPMS
                 string pwd = Request.Cookies["PWD"].Value.ToString();
                 Response.Redirect("New.aspx?ID="+id+"&&PWD="+pwd+"");
             }*/
+            if (!IsPostBack)
+            {
+                ViewState["SortOrder"] = "Name";
+                ViewState["OrderDire"] = "ASC";
+                bind();
+            }
+        }
+
+        public void bind() {
+            string sqlstr = "select * from flower";
+            sqlcon = new SqlConnection(strCon);
+            SqlDataAdapter myda = new SqlDataAdapter(sqlstr,sqlcon);
+            DataSet myds = new DataSet();
+            myda.Fill(myds,"Flower");
+            DataView view = myds.Tables["Flower"].DefaultView;
+            string sort = (string)ViewState["SortOrder"]+" "+(string)ViewState["OrderDire"];
+            view.Sort = sort;
+            GridView1.DataSource = view;
+            GridView1.DataBind();
+            GridView1.ShowFooter = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -106,6 +131,27 @@ namespace SBSPMS
             }
             Application.UnLock();
             Response.Redirect("Total.aspx?userid=" + userid);
+        }
+
+        protected void GridView1_Sorting(object sender, GridViewSortEventArgs e)
+        {
+            string sPage = e.SortExpression;
+            if (ViewState["SortOrder"].ToString() == sPage)
+            {
+                if (ViewState["OrderDire"].ToString() == "Desc")
+                {
+                    ViewState["OrderDire"] = "ASC";
+                }
+                else
+                {
+                    ViewState["OrderDire"] = "Desc";
+                }
+            }
+            else
+            {
+                ViewState["SortOrder"] = e.SortExpression;
+            }
+            bind();
         }
     }
 }

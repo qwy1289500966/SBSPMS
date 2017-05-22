@@ -48,6 +48,10 @@
     密码：<asp:TextBox ID="TextBox4" runat="server" TextMode="Password"/> 
     <br />
     <asp:Button ID="Button3" Text="登录" runat="server" onclick="Button3_Click" />
+    <br />
+    <strong><span class="style1">鲜花信息</span></strong>
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" 
+        onsorting="GridView1_Sorting"/>
     </form>    
 </body>
 </html>
