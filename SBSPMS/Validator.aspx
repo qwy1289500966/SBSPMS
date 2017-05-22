@@ -16,6 +16,9 @@
     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic"
         ErrorMessage="密码不能为空" ForeColor="Red" ControlToValidate="TextBox2"></asp:RequiredFieldValidator>
     <br />
+    确认密码：<asp:TextBox ID="TextBox3" runat="server" />
+    <asp:CompareValidator ErrorMessage="二次密码输入不一致" ControlToValidate="TextBox3" Display="Dynamic"
+        ControlToCompare="TextBox2" runat="server" /><br />
     <asp:Button ID="Button1" Text="登录" runat="server" OnClick="Button1_Click" />
     <br />
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
