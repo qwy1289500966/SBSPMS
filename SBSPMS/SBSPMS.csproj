@@ -60,6 +60,7 @@
     <Content Include="PlaceHolder.aspx" />
     <Content Include="Total.aspx" />
     <Content Include="User.aspx" />
+    <Content Include="Validator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="User.aspx.designer.cs">
       <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validator.aspx.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validator.aspx.designer.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
