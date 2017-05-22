@@ -52,6 +52,12 @@
     <strong><span class="style1">鲜花信息</span></strong>
     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" 
         onsorting="GridView1_Sorting"/>
+    <br />
+    <asp:Label ID="Lable2" Text="请输入网址：" runat="server" />
+    <asp:TextBox ID="TextBox10" runat="server" BorderStyle="Inset" BorderWidth="4" 
+        AutoPostBack="true" ontextchanged="TextBox10_TextChanged"/><br />
+    <br />
+    <asp:HyperLink ID="HyperLink1" runat="server" Visibel="false"/>
     </form>    
 </body>
 </html>

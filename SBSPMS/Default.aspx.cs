@@ -153,5 +153,12 @@ namespace SBSPMS
             }
             bind();
         }
+
+        protected void TextBox10_TextChanged(object sender, EventArgs e)
+        {
+            HyperLink1.Visible = true;
+            HyperLink1.Text = TextBox10.Text;
+            HyperLink1.NavigateUrl = TextBox10.Text;
+        }
     }
 }
