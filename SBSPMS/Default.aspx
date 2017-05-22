@@ -57,7 +57,11 @@
     <asp:TextBox ID="TextBox10" runat="server" BorderStyle="Inset" BorderWidth="4" 
         AutoPostBack="true" ontextchanged="TextBox10_TextChanged"/><br />
     <br />
-    <asp:HyperLink ID="HyperLink1" runat="server" Visibel="false"/>
+    <asp:HyperLink ID="HyperLink1" runat="server" Visibel="false"/><br />
+    请单击广告<br />
+    <asp:AdRotator ID="Adrotator1" runat="server" 
+        AdvertisementFile="~/XMLFile1.xml" Target="_blank" 
+        onadcreated="Adrotator1_AdCreated" />
     </form>    
 </body>
 </html>

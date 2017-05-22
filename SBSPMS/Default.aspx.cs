@@ -160,5 +160,10 @@ namespace SBSPMS
             HyperLink1.Text = TextBox10.Text;
             HyperLink1.NavigateUrl = TextBox10.Text;
         }
+
+        protected void Adrotator1_AdCreated(object sender, AdCreatedEventArgs e)
+        {
+
+        }
     }
 }

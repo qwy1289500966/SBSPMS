@@ -8,9 +8,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+    请输入添加控件组的数量<br />
+    <asp:TextBox ID="TextBox1" runat="server" /><br />
+    <asp:Button ID="Button1" Text="确定" runat="server" onclick="Button1_Click" /><br />
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server" />
     </form>
 </body>
 </html>

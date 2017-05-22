@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Image/sbs logo.PNG</ImageUrl>
+    <NavigateUrl>http://life.sina.com.cn/jipiao/resualtsfee.htm</NavigateUrl>
+    <AlternateText>机票预订</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword>Category1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Image/捕获.PNG</ImageUrl>
+    <NavigateUrl>http://diy.sina.com.cn</NavigateUrl>
+    <AlternateText>精美贺卡</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword>Category1</Keyword>
+  </Ad>
+</Advertisements>
