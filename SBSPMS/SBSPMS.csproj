@@ -53,7 +53,8 @@
   <ItemGroup>
     <Content Include="Admin.aspx" />
     <Content Include="BulletedList.aspx" />
-    <Content Include="DataTable.aspx" />
+    <Content Include="DataAdapter.aspx" />
+    <Content Include="DataReader.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Image\sbs logo.PNG" />
     <Content Include="Image\捕获.PNG" />
@@ -89,12 +90,19 @@
     <Compile Include="BulletedList.aspx.designer.cs">
       <DependentUpon>BulletedList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataTable.aspx.cs">
-      <DependentUpon>DataTable.aspx</DependentUpon>
+    <Compile Include="DataAdapter.aspx.cs">
+      <DependentUpon>DataAdapter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DataTable.aspx.designer.cs">
-      <DependentUpon>DataTable.aspx</DependentUpon>
+    <Compile Include="DataAdapter.aspx.designer.cs">
+      <DependentUpon>DataAdapter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataReader.aspx.cs">
+      <DependentUpon>DataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataReader.aspx.designer.cs">
+      <DependentUpon>DataReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
