@@ -54,6 +54,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="BulletedList.aspx" />
     <Content Include="DataAdapter.aspx" />
+    <Content Include="DataBindTest.aspx" />
     <Content Include="DataReader.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Image\sbs logo.PNG" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="DataAdapter.aspx.designer.cs">
       <DependentUpon>DataAdapter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBindTest.aspx.cs">
+      <DependentUpon>DataBindTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBindTest.aspx.designer.cs">
+      <DependentUpon>DataBindTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataReader.aspx.cs">
       <DependentUpon>DataReader.aspx</DependentUpon>
