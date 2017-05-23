@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SBSPMS.Default" %>
 
+<%@ Register src="WebUserControl1.ascx" tagname="WebUserControl1" tagprefix="uc1" %>
+
+<%@ Register src="MyControl.ascx" tagname="MyControl" tagprefix="uc2" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -62,6 +66,10 @@
     <asp:AdRotator ID="Adrotator1" runat="server" 
         AdvertisementFile="~/XMLFile1.xml" Target="_blank" 
         onadcreated="Adrotator1_AdCreated" />
+    <br />
+    <uc1:WebUserControl1 ID="WebUserControl11" runat="server" />
+    <br />
+    <uc2:MyControl ID="MyControl1" runat="server" />
     </form>    
 </body>
 </html>

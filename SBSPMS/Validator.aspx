@@ -19,9 +19,19 @@
     确认密码：<asp:TextBox ID="TextBox3" runat="server" />
     <asp:CompareValidator ErrorMessage="二次密码输入不一致" ControlToValidate="TextBox3" Display="Dynamic"
         ControlToCompare="TextBox2" runat="server" /><br />
+    请输入你的年龄：<br />
+    <asp:TextBox ID="TextBox4" runat="server" />
+    <asp:RangeValidator ErrorMessage="请输入1-150的整数！" ControlToValidate="TextBox4"
+        runat="server" Display="Dynamic" Type="Integer" MaximumValue="150" MinimumValue="1" /><br />
+    请输入你的身份证号码：<br />
+    <asp:TextBox ID="TextBox5" runat="server" />
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox5"
+        ErrorMessage="你输入的身份证号码格式不正确" ValidationExpression="\d{17}[\d|X]|\d{15}"></asp:RegularExpressionValidator>
+    <br />
     <asp:Button ID="Button1" Text="登录" runat="server" OnClick="Button1_Click" />
     <br />
-    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text=""></asp:Label><br />
+    <asp:ValidationSummary runat="server" />
     </form>
 </body>
 </html>

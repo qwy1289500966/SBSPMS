@@ -56,6 +56,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Image\sbs logo.PNG" />
     <Content Include="Image\捕获.PNG" />
+    <Content Include="MyControl.ascx" />
     <Content Include="New.aspx" />
     <Content Include="PlaceHolder.aspx" />
     <Content Include="Total.aspx" />
@@ -68,6 +69,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebUserControl1.ascx" />
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +93,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl.ascx.cs">
+      <DependentUpon>MyControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyControl.ascx.designer.cs">
+      <DependentUpon>MyControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="New.aspx.cs">
       <DependentUpon>New.aspx</DependentUpon>
@@ -127,6 +136,13 @@
     </Compile>
     <Compile Include="Validator.aspx.designer.cs">
       <DependentUpon>Validator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
