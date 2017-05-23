@@ -53,13 +53,14 @@
   <ItemGroup>
     <Content Include="Admin.aspx" />
     <Content Include="BulletedList.aspx" />
-    <Content Include="DataReader.aspx" />
+    <Content Include="DataTable.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Image\sbs logo.PNG" />
     <Content Include="Image\捕获.PNG" />
     <Content Include="MyControl.ascx" />
     <Content Include="New.aspx" />
     <Content Include="PlaceHolder.aspx" />
+    <Content Include="SqlDataTable.aspx" />
     <Content Include="Total.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Validator.aspx" />
@@ -88,12 +89,12 @@
     <Compile Include="BulletedList.aspx.designer.cs">
       <DependentUpon>BulletedList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataReader.aspx.cs">
-      <DependentUpon>DataReader.aspx</DependentUpon>
+    <Compile Include="DataTable.aspx.cs">
+      <DependentUpon>DataTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DataReader.aspx.designer.cs">
-      <DependentUpon>DataReader.aspx</DependentUpon>
+    <Compile Include="DataTable.aspx.designer.cs">
+      <DependentUpon>DataTable.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -124,6 +125,13 @@
       <DependentUpon>PlaceHolder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlDataTable.aspx.cs">
+      <DependentUpon>SqlDataTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlDataTable.aspx.designer.cs">
+      <DependentUpon>SqlDataTable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Total.aspx.cs">
       <DependentUpon>Total.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

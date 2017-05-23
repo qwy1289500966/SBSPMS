@@ -11,7 +11,7 @@ namespace SBSPMS
 {
 
 
-    public partial class DataReader
+    public partial class SqlDataTable1
     {
 
         /// <summary>
