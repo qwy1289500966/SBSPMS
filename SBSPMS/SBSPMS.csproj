@@ -58,6 +58,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Image\sbs logo.PNG" />
     <Content Include="Image\捕获.PNG" />
+    <Content Include="InsertCommand.aspx" />
     <Content Include="MyControl.ascx" />
     <Content Include="New.aspx" />
     <Content Include="PlaceHolder.aspx" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCommand.aspx.cs">
+      <DependentUpon>InsertCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertCommand.aspx.designer.cs">
+      <DependentUpon>InsertCommand.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyControl.ascx.cs">
       <DependentUpon>MyControl.ascx</DependentUpon>
