@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="SBSPMS.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body leftmargin="0" topmargin="0">
+    <form id="form1" runat="server">
+    <div align="center">
+        <table width="1311" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+                <td width="1311" height="77" align="right" valign="top" background="Image/head.PNG" class="style1">
+                </td>
+            </tr>
+            <tr>
+                <td width="1311" valign="top">
+                    <table width="100%" border="0" cellspasing="0" cellpadding="0" style="height: 105px">
+                        <tr>
+                            <td width="244" valign="top">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    <p style="height: 103px">
+                                        &nbsp;<br />
+                                    </p>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td align="left" valign="top">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    <p style="height: 103px">
+                                        &nbsp;<br />
+                                    </p>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="1311" height="35" align="center" class="baseline">
+                    Copyright<span>2004-2017</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

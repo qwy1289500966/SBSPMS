@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<DocumentElement>
+  <basic>
+    <ID>1</ID>
+    <NAME>三国演义</NAME>
+    <AUTHOR>罗贯中</AUTHOR>
+    <PUBLISH>人民文学出版社</PUBLISH>
+  </basic>
+  <basic>
+    <ID>2</ID>
+    <NAME>红楼梦</NAME>
+    <AUTHOR>曹雪芹</AUTHOR>
+    <PUBLISH>人民文学出版社</PUBLISH>
+  </basic>
+  <basic>
+    <ID>3</ID>
+    <NAME>西游记</NAME>
+    <AUTHOR>吴承恩</AUTHOR>
+    <PUBLISH>人民文学出版社</PUBLISH>
+  </basic>
+</DocumentElement>
