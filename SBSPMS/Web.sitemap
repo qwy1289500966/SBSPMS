@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="MasterPageTest.aspx" title="管理系统"  description="">
+    <siteMapNode url="DataAdapter.aspx" title="1111"  description="" />
+    <siteMapNode url="DataBindTest.aspx" title="2222"  description="" />
+    <siteMapNode url="DataReader.aspx" title="卡类管理"  description="">
+      <siteMapNode url="User.aspx" title="1111"  description="" />
+      <siteMapNode url="Admin.aspx" title="2222"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
