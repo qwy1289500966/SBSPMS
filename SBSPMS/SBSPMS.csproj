@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -66,6 +67,8 @@
     <Content Include="Image\sbs logo.PNG" />
     <Content Include="Image\捕获.PNG" />
     <Content Include="InsertCommand.aspx" />
+    <Content Include="LinqTest.aspx" />
+    <Content Include="LinqToSqlTest.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MasterPageTest.aspx" />
     <Content Include="MyControl.ascx" />
@@ -73,6 +76,7 @@
     <Content Include="PlaceHolder.aspx" />
     <Content Include="ServerControl.aspx" />
     <Content Include="SqlDataTable.aspx" />
+    <Content Include="StudentTest.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="test.xml" />
     <Content Include="Total.aspx" />
@@ -119,6 +123,11 @@
     </Compile>
     <Compile Include="DataBindTest.aspx.designer.cs">
       <DependentUpon>DataBindTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
     <Compile Include="DataReader.aspx.cs">
       <DependentUpon>DataReader.aspx</DependentUpon>
@@ -168,6 +177,20 @@
     </Compile>
     <Compile Include="InsertCommand.aspx.designer.cs">
       <DependentUpon>InsertCommand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinqTest.aspx.cs">
+      <DependentUpon>LinqTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinqTest.aspx.designer.cs">
+      <DependentUpon>LinqTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinqToSqlTest.aspx.cs">
+      <DependentUpon>LinqToSqlTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinqToSqlTest.aspx.designer.cs">
+      <DependentUpon>LinqToSqlTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -226,6 +249,14 @@
     <Compile Include="SqlDataTable.aspx.designer.cs">
       <DependentUpon>SqlDataTable.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentTest.aspx.cs">
+      <DependentUpon>StudentTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentTest.aspx.designer.cs">
+      <DependentUpon>StudentTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Total.aspx.cs">
       <DependentUpon>Total.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +312,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\主题1\SkinFile.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
