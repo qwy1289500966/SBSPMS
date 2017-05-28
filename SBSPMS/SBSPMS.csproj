@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="AjaxWeb.aspx" />
     <Content Include="BulletedList.aspx" />
     <Content Include="DataAdapter.aspx" />
     <Content Include="DataBindTest.aspx" />
@@ -92,6 +93,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebService.asmx" />
     <Content Include="WebUserControl1.ascx" />
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
@@ -102,6 +104,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxWeb.aspx.cs">
+      <DependentUpon>AjaxWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxWeb.aspx.designer.cs">
+      <DependentUpon>AjaxWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="BulletedList.aspx.cs">
       <DependentUpon>BulletedList.aspx</DependentUpon>
@@ -291,6 +300,10 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
