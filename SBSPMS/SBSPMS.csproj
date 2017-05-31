@@ -82,6 +82,7 @@
     <Content Include="test.xml" />
     <Content Include="Total.aspx" />
     <Content Include="trans.xslt" />
+    <Content Include="UpdatePanelTest.aspx" />
     <Content Include="User.aspx" />
     <Content Include="UserInfo.aspx" />
     <Content Include="Validator.aspx" />
@@ -137,6 +138,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
     </Compile>
     <Compile Include="DataReader.aspx.cs">
       <DependentUpon>DataReader.aspx</DependentUpon>
@@ -273,6 +279,13 @@
     <Compile Include="Total.aspx.designer.cs">
       <DependentUpon>Total.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UpdatePanelTest.aspx.cs">
+      <DependentUpon>UpdatePanelTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePanelTest.aspx.designer.cs">
+      <DependentUpon>UpdatePanelTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -332,6 +345,11 @@
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="DataClasses2.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -339,6 +357,11 @@
   <ItemGroup>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses2.dbml.layout">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
