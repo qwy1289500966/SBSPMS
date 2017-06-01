@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBSPMS", "SBSPMS\SBSPMS.csproj", "{46972F0E-2B6F-45E9-AFEB-D4F72309DAD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "MvcApplication\MvcApplication.csproj", "{F87CE79F-7378-41A5-911B-E1A7E7DB527D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{46972F0E-2B6F-45E9-AFEB-D4F72309DAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46972F0E-2B6F-45E9-AFEB-D4F72309DAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46972F0E-2B6F-45E9-AFEB-D4F72309DAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87CE79F-7378-41A5-911B-E1A7E7DB527D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87CE79F-7378-41A5-911B-E1A7E7DB527D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87CE79F-7378-41A5-911B-E1A7E7DB527D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87CE79F-7378-41A5-911B-E1A7E7DB527D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
